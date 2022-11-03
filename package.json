@@ -1,0 +1,41 @@
+{
+  "name": "@cncsc/eslint-config",
+  "version": "0.0.0-development",
+  "description": "ESLint shareable configuration for CNCSC projects.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cncsc/eslint-config.git"
+  },
+  "author": {
+    "name": "Cloud-Native Cybersecurity Collective",
+    "email": "info@cncsc.io",
+    "url": "https://www.cncsc.io/"
+  },
+  "contributors": [
+    {
+      "name": "Armor Defense Inc.",
+      "email": "info@armor.com",
+      "url": "https://www.armor.com/"
+    }
+  ],
+  "license": "Apache-2.0",
+  "scripts": {
+    "lint": "eslint -c ./index.js ./ --ext .js"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">=5",
+    "@typescript-eslint/parser": ">=5",
+    "eslint": ">=8",
+    "eslint-plugin-eslint-comments": ">=3",
+    "eslint-plugin-import": ">=2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
